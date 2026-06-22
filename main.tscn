@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://b6vxwagtww8su"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_odjk5"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_odjk5"]
+
+[node name="SimObject" type="SimObject" unique_id=1409929708]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1248067742]
+mesh = SubResource("SphereMesh_odjk5")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1175650285]
+
+[node name="Camera3D2" type="Camera3D" parent="." unique_id=1396244911]
+transform = Transform3D(0.48619545, 0, 0.8738501, 0, 1, 0, -0.8738501, 0, 0.48619545, 3.8373032, 1.5125766, -1.0752368)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1225644527]
+transform = Transform3D(-0.66724443, 0, -0.74483883, 0, 1, 0, 0.74483883, 0, -0.66724443, -36.7958, 8.349907, 16.230898)
+
+[node name="ground" type="MeshInstance3D" parent="." unique_id=965091119]
+mesh = SubResource("PlaneMesh_odjk5")
